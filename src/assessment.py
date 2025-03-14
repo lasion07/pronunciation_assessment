@@ -123,11 +123,14 @@ def lambda_handler(event, context):
             'body': ''
         }
 
+    audio_chunk_dir = './src/audio_chunks/'
+    if not os.path.exists(audio_chunk_dir):
+        os.makedirs(audio_chunk_dir)
     # Write audio to a temp file
     start = time.time()
     letters = string.ascii_lowercase
     random_string = ''.join(random.choice(letters) for i in range(20))
-    audio_chunk_path = 'audio_chunks/' + random_string + '.ogg'
+    audio_chunk_path = audio_chunk_dir + random_string + '.ogg'
     f = open(audio_chunk_path, 'wb')
     f.write(audio_bytes)
     f.close()
@@ -187,7 +190,9 @@ def lambda_handler(event, context):
 
     res = {'score': score,
            'error_char_indexes': error_char_indexes,
-           'word_scores': word_scores}
+           'word_scores': word_scores,
+           'label_string': label_string,
+           'pred_string': pred}
     
     print(res)
 

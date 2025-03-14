@@ -1,0 +1,359 @@
+/* CSS cho trang Home */
+.home-container {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw; 
+  } 
+  .main-element{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .main-content{
+    padding-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 300px;
+
+  }
+  .header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-between; */
+    align-items: center;
+    justify-content: center;
+  }
+  .dashboard{
+
+    width: 20%;
+    display: flex;
+    /* padding-left: 5%; */
+    flex-direction: column;
+    align-items: space-between;
+    /* justify-content: center; */
+    
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 200px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid rgb(0, 0, 0); */
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Khoảng cách giữa các icon */
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .icon {
+    cursor: pointer; 
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+  }
+
+  /* .ipa-result {
+    font-family: Arial, Helvetica, sans-serif;
+  } */
+
+  .button {
+    background-color: white; /* Green */
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 4px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .volume{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #58cc02;
+  }
+
+  .volume:hover{
+    border: 2px solid #89e219;
+  }
+
+    /* #58cc02
+  #89e219
+  #4b4b4b
+  #ffffff */
+  .icon-mic {
+    width: 60px;
+    height: 60px;
+    background-color: #58cc02; 
+    color: black; 
+    /* border: 2px solid #58cc02; */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  .icon-mic:hover  {
+    background-color: #89e219;
+    color: white;
+    box-shadow: none;
+  }
+
+  .stop-mic {
+    width: 60px;
+    height: 60px;
+    background-color: #ff4b4b; 
+    color: black; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  .stop-mic:hover  {
+    background-color: #ff9600;
+    color: white;
+    box-shadow: none;
+  }
+  
+  /* .icon-mic:focus {
+    background-color: white;
+    color: white;
+  } */
+
+  .disabled {
+    background-color: #e5e5e5;
+    color: white;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+
+  .ear{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #58cc02;
+  }
+  
+  .ear:hover{
+    border: 2px solid #89e219;
+  }
+
+  .icon-x{
+    background-color: white;
+  }
+
+  .footer{
+    height: 10vh;
+    width: 100vw;
+  }
+  .button-container {
+    height: 30%;
+    display: flex;
+    width: 100%;
+    align-content: space-around;
+    justify-content: space-around;
+    /* margin-top: 20px; */
+  }
+  
+  .button-container button {
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #afafaf;
+    color: #777777;
+    font-weight: bold;
+    margin: 10px 10px; /* Khoảng cách giữa các button */
+    width: 150px;
+    height: 40px ;
+    border-radius: 15px;
+    transition-duration: 0.1s;
+    box-shadow: 0px 4px #e5e5e5;
+  }
+  
+  .button-container button:hover{
+    background-color: #e5e5e5;
+  }
+  .process{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    
+    /* justify-content: center; */
+  }
+  .progress-container {
+    width: 300px;
+    height: 20px;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    border-radius: 15px;
+  }
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #58cc02;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 10px 0;
+  }
+
+  .display-result{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .score-result {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 10%; */
+  }
+  
+  .circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(
+      rgb(0, 242, 0) 0% calc(70% - (70% - var(--percentage))),
+      rgb(252, 2, 2) calc(70% - (70% - var(--percentage))) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 0px 20px 10px rgba(8, 255, 8, 0.5); */
+    transition: background 1s linear;
+  }
+  
+  .circle-inner {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .score {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  
+/* styles.css */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#sentence{
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+#sentence span {
+  display: inline-block;
+  margin-top: 10px;
+  /* margin-right: 0px;  */
+  font-size: 25px;
+}
+.menu-content button {
+  width: 120px;
+  position: relative;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, transform 0.2s, border-color 0.3s; /* Add transition for background, transform, and border-color */
+}
+
+.menu-content button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -20px; /* Adjust this value based on the size of the triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 19px 0 20px 20px; /* Adjust this value to change the size of the triangle */
+  border-color: transparent transparent transparent #4CAF50; /* Adjust the color to match the button's background */
+  transition: border-color 0.3s; /* Add transition for border-color */
+}
+
+.menu-content button.active {
+  background-color: red;
+}
+
+.menu-content button.active::after {
+  border-color: transparent transparent transparent red;
+}
+
+/* Add click effect */
+.menu-content button:active {
+  transform: scale(0.95); /* Add slight shrink effect when clicked */
+}
+#waveform {
+  width: 100%;
+  height: 100px; 
+  background-color: #ffffff; 
+  border-radius: 10px;
+}
+
+.red{
+  color: red;
+}
+.yellow{
+  color: rgb(186, 186, 15);
+}
+.green{
+  color: rgb(20, 222, 34);
+}
